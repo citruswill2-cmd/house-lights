@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HOUSE LIGHTS — first file, then the wall</title>
+  <meta name="description" content="HOUSE LIGHTS writes the first website for people who just decided to start a business, and puts quiet live sites on a night wall people actually tap." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            void: "#050508",
+            pane: "#0B0C12",
+            frost: "#E8E4DA",
+            mute: "#8B8894",
+            line: "#4D8BFF",
+            heat: "#FF2B3A"
+          },
+          fontFamily: {
+            display: ["Oswald", "Impact", "sans-serif"],
+            serif: ["Source Serif 4", "Georgia", "serif"],
+            mono: ["IBM Plex Mono", "ui-monospace", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(900px 420px at 80% -10%, rgba(77,139,255,.16), transparent 55%),
+        radial-gradient(700px 380px at -10% 20%, rgba(255,43,58,.08), transparent 50%),
+        #050508;
+      color: #E8E4DA;
+    }
+    .glass {
+      background: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
+      border: 1px solid rgba(77,139,255,.28);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+      backdrop-filter: blur(10px);
+    }
+    .reveal { opacity: 0; transform: translateY(14px); }
+    a.live { color: #4D8BFF; }
+    a.heat { color: #FF2B3A; }
+    a.hold { color: #8B8894; }
+  </style>
+</head>
+<body class="font-serif antialiased">
+  <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:bg-pane focus:px-3 focus:py-2" href="#wall">Skip to wall</a>
+
+  <header class="sticky top-0 z-40 border-b border-line/20 bg-void/80 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
+      <a href="#top" class="font-display text-lg tracking-[0.18em]">HOUSE LIGHTS</a>
+      <nav class="flex gap-5 font-mono text-[11px] uppercase tracking-[0.2em] text-mute">
+        <a class="hover:text-frost" href="#panes">Panes</a>
+        <a class="hover:text-frost" href="#wall">Wall</a>
+        <a class="hover:text-heat" href="#desk">Desk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-12 md:grid-cols-[1.2fr_.8fr] md:pt-20">
+      <div>
+        <p class="reveal font-mono text-[11px] uppercase tracking-[0.28em] text-line">Studio hours · lights on</p>
+        <h1 class="reveal mt-4 font-display text-[16vw] leading-[0.82] tracking-tight sm:text-7xl md:text-8xl">
+          HOUSE<br />LIGHTS<br /><span class="text-heat">UP.</span>
+        </h1>
+        <p class="reveal mt-8 max-w-xl text-lg leading-relaxed text-frost/85 md:text-xl">
+          You decided. You do not have a page, or you have one and nobody is walking in.
+          HOUSE LIGHTS writes the first file you own — or stamps a live URL on the night wall.
+        </p>
+        <div class="reveal mt-8 flex flex-wrap gap-3">
+          <a href="#desk" class="bg-heat px-5 py-3 font-display text-sm tracking-[0.14em] text-void hover:brightness-110">Bring the paragraph</a>
+          <a href="#wall" class="border border-line/50 px-5 py-3 font-display text-sm tracking-[0.14em] text-line hover:bg-line/10">See who’s live</a>
+        </div>
+        <p class="reveal mt-6 font-mono text-[11px] uppercase tracking-[0.18em] text-mute">Chris · citruswill2@gmail.com · one HTML, no CMS</p>
+      </div>
+
+      <aside class="reveal glass p-5 md:mt-10">
+        <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-line">Tonight on the glass</p>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li class="flex items-baseline justify-between gap-3 border-b border-white/10 pb-2">
+            <span>Iris Onyx</span>
+            <a class="live font-mono text-[11px]" href="https://iris0nyx.com/" target="_blank" rel="noopener">live</a>
+          </li>
+          <li class="flex items-baseline justify-between gap-3 border-b border-white/10 pb-2">
+            <span>DNC Computerz</span>
+            <a class="live font-mono text-[11px]" href="https://dnc-computerz.vercel.app/" target="_blank" rel="noopener">live</a>
+          </li>
+          <li class="flex items-baseline justify-between gap-3 border-b border-white/10 pb-2">
+            <span>Daytape</span>
+            <a class="live font-mono text-[11px]" href="https://daytape.vercel.app/" target="_blank" rel="noopener">live</a>
+          </li>
+          <li class="flex items-baseline justify-between gap-3">
+            <span>Your name</span>
+            <a class="heat font-mono text-[11px]" href="#desk">open</a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="panes" class="mx-auto max-w-6xl px-4 pb-20">
+      <p class="reveal font-mono text-[11px] uppercase tracking-[0.22em] text-mute">Two panes. Same shop.</p>
+      <h2 class="reveal mt-2 font-display text-4xl tracking-tight md:text-5xl">Pick the week you’re in.</h2>
+      <div class="mt-8 grid gap-4 md:grid-cols-2">
+        <article class="reveal glass p-6">
+          <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-heat">Pane A · First file</p>
+          <h3 class="mt-3 font-display text-3xl tracking-tight">Start the business.</h3>
+          <p class="mt-4 leading-relaxed text-frost/80">
+            Modern young adults and adults who want a shop, a set, a stall, a service — and do not know how to put it on a phone.
+            Name, offer, who it’s for, one way to reach you. You keep the file.
+          </p>
+          <ul class="mt-5 space-y-1 font-mono text-[12px] text-mute">
+            <li>— Under half a second</li>
+            <li>— Tailwind, light motion</li>
+            <li>— No platform tax</li>
+          </ul>
+        </article>
+        <article class="reveal glass p-6">
+          <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-line">Pane B · Live wall</p>
+          <h3 class="mt-3 font-display text-3xl tracking-tight">Promote what’s already up.</h3>
+          <p class="mt-4 leading-relaxed text-frost/80">
+            Music, lots, comedy, tapes, studios. If the URL works and the room is quiet, it belongs on the glass:
+            one line, a blue stamp, a tap out. Empty panes stay empty on purpose.
+          </p>
+          <ul class="mt-5 space-y-1 font-mono text-[12px] text-mute">
+            <li>— Blue = live URL</li>
+            <li>— Red = studio heat</li>
+            <li>— Gray = still in the tray</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="wall" class="mx-auto max-w-6xl px-4 pb-20">
+      <p class="reveal font-mono text-[11px] uppercase tracking-[0.22em] text-line">The wall</p>
+      <h2 class="reveal mt-2 font-display text-4xl tracking-tight md:text-5xl">Quiet sites go first.</h2>
+      <p class="reveal mt-4 max-w-2xl text-frost/75">
+        Not a portfolio. A starting wall. Click through. If your page is live, ask for a pane.
+        If it isn’t, ask for the first file.
+      </p>
+
+      <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <a class="reveal glass group block p-5 hover:border-line/70" href="https://iris0nyx.com/" target="_blank" rel="noopener">
+          <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-line">01 · Artist · live</p>
+          <h3 class="mt-2 font-display text-2xl">Iris Onyx</h3>
+          <p class="mt-2 text-sm text-frost/75">Goth pop from Utah. Listen, shows, art. Windows down. Lights off.</p>
+          <p class="mt-4 font-mono text-[11px] text-line group-hover:underline">iris0nyx.com →</p>
+        </a>
+        <a class="reveal glass group block p-5 hover:border-line/70" href="https://dnc-computerz.vercel.app/" target="_blank" rel="noopener">
+          <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-line">02 · Lot · live</p>
+          <h3 class="mt-2 font-display text-2xl">DNC Computerz</h3>
+          <p class="mt-2 text-sm text-frost/75">Towers, parts, screens on shop tickets. A bench page for what is sitting there.</p>
+          <p class="mt-4 font-mono text-[11px] text-line group-hover:underline">dnc-computerz.vercel.app →</p>
+        </a>
+        <a class="reveal glass group block p-5 hover:border-line/70" href="https://sameweekhq.vercel.app/" target="_blank" rel="noopener">
+          <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-heat">03 · Studio · heat</p>
+          <h3 class="mt-2 font-display text-2xl">REDLINE</h3>
+          <p class="mt-2 text-sm text-frost/75">You describe the job. Chris builds the site. Client-owned single HTML.</p>
+          <p class="mt-4 font-mono text-[11px] text-heat group-hover:underline">sameweekhq.vercel.app →</p>
+        </a>
+        <a class="reveal glass group block p-5 hover:border-line/70" href="https://daytape.vercel.app/" target="_blank" rel="noopener">
+          <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-line">04 · Tape · live</p>
+          <h3 class="mt-2 font-display text-2xl">Daytape</h3>
+          <p class="mt-2 text-sm text-frost/75">A day’s tape without a platform tax. Phone-first, short, already up.</p>
+          <p class="mt-4 font-mono text-[11px] text-line group-hover:underline">daytape.vercel.app →</p>
+        </a>
+        <a class="reveal glass group block p-5 hover:border-white/20" href="https://github.com/citruswill2-cmd/sameweek" target="_blank" rel="noopener">
+          <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-mute">05 · Shop · tray</p>
+          <h3 class="mt-2 font-display text-2xl">Sameweek</h3>
+          <p class="mt-2 text-sm text-frost/75">Source is public. sameweek.vercel.app currently serves CAST — this pane waits on its own project.</p>
+          <p class="mt-4 font-mono text-[11px] text-mute group-hover:underline">github.com/citruswill2-cmd/sameweek →</p>
+        </a>
+        <a class="reveal glass group block p-5 hover:border-white/20" href="https://github.com/citruswill2-cmd/laughline" target="_blank" rel="noopener">
+          <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-mute">06 · Comedy · tray</p>
+          <h3 class="mt-2 font-display text-2xl">Laughline</h3>
+          <p class="mt-2 text-sm text-frost/75">Chris Williams comedy first-draft. laughline.vercel.app is still 404. File lives on GitHub.</p>
+          <p class="mt-4 font-mono text-[11px] text-mute group-hover:underline">github.com/citruswill2-cmd/laughline →</p>
+        </a>
+        <a class="reveal glass group block p-5 hover:border-heat/60 sm:col-span-2 lg:col-span-3" href="#desk">
+          <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-heat">Open pane</p>
+          <h3 class="mt-2 font-display text-2xl">Your name on the glass</h3>
+          <p class="mt-2 max-w-xl text-sm text-frost/75">New business or a live site that needs traffic. Send the paragraph. If the URL works, it gets a pane. If it doesn’t, it gets a first file.</p>
+          <p class="mt-4 font-mono text-[11px] text-heat">Write the desk →</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="desk" class="mx-auto max-w-6xl px-4 pb-24">
+      <div class="glass p-6 md:p-10">
+        <p class="reveal font-mono text-[11px] uppercase tracking-[0.22em] text-heat">Desk</p>
+        <h2 class="reveal mt-2 font-display text-4xl tracking-tight md:text-6xl">SAY THE THING.</h2>
+        <p class="reveal mt-4 max-w-xl text-frost/80">
+          One box. No discovery call. Name, what you want the site to do, who it is for, budget if you have one, live URL if you already have one.
+        </p>
+        <form id="brief" class="reveal mt-8 max-w-xl">
+          <label class="font-mono text-[11px] uppercase tracking-[0.18em] text-mute" for="para">The paragraph</label>
+          <textarea id="para" name="para" rows="7" required placeholder="Name. What it does. Who it’s for. Budget if you have one. Live URL if you want the wall." class="mt-2 w-full resize-y border border-line/30 bg-void px-4 py-3 text-frost outline-none focus:border-line"></textarea>
+          <button type="submit" class="mt-4 bg-heat px-6 py-3 font-display text-sm tracking-[0.16em] text-void hover:brightness-110">Send to Chris</button>
+          <p class="mt-3 font-mono text-[11px] text-mute">Opens mail to citruswill2@gmail.com with the paragraph prefilled.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-6 font-mono text-[11px] uppercase tracking-[0.16em] text-mute">
+      <span>HOUSE LIGHTS · files you own</span>
+      <span>void · #4D8BFF · #FF2B3A</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script>
+    (function () {
+      var nodes = document.querySelectorAll(".reveal");
+      if (window.anime) {
+        window.anime({
+          targets: nodes,
+          opacity: [0, 1],
+          translateY: [14, 0],
+          delay: window.anime.stagger(70),
+          duration: 380,
+          easing: "easeOutQuad"
+        });
+      } else {
+        nodes.forEach(function (n) {
+          n.style.opacity = "1";
+          n.style.transform = "none";
+        });
+      }
+      var form = document.getElementById("brief");
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var text = (document.getElementById("para").value || "").trim();
+          var body = text || "Name.\nWhat I want the site to do.\nWho it is for.\nBudget if I have one.\nLive URL if I have one.";
+          var url =
+            "mailto:citruswill2@gmail.com" +
+            "?subject=" + encodeURIComponent("HOUSE LIGHTS brief") +
+            "&body=" + encodeURIComponent(body);
+          window.location.href = url;
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
